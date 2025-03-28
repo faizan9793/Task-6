@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Zomato Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .signup-container {
+            width: 100%;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .signup-container h2 {
+            text-align: center;
+            color: #d32f2f; /* Zomato Red */
+        }
+        .signup-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .signup-container input[type="submit"] {
+            background-color: #d32f2f; /* Zomato Red */
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .signup-container input[type="submit"]:hover {
+            background-color: #c62828;
+        }
+        .signup-container .already-account {
+            text-align: center;
+            font-size: 14px;
+        }
+        .signup-container .already-account a {
+            color: #d32f2f; /* Zomato Red */
+            text-decoration: none;
+        }
+        .signup-container .already-account a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sign Up Form -->
+    <div class="signup-container">
+        <h2>Create an Account</h2>
+        <form action="signup_process.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <input type="submit" value="Sign Up">
+
+            <div class="already-account">
+                <p>Already have an account? <a href="login.html">Login</a></p>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
